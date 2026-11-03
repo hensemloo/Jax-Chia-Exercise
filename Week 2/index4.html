@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</html>
+<script>
+
+    let grade = String(prompt("Enter your grade:")).toUpperCase();
+    
+    switch(grade) {
+        case "A":
+            console.log("Excellent!");
+            break;
+        case "B":
+            console.log("Good");
+            break;
+        case "C":
+            console.log("Average");
+            break;
+        case "D":
+            console.log("Below Average");
+            break;
+        case "F":
+            console.log("Failing");
+            break;
+        default:
+            console.log("Invalid input. Please enter a valid grade (A, B, C, D, F).");
+    }
+</script>

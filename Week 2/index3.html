@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // // Your JavaScript code here
+    // let number1, number2
+    // number1=Number(prompt("Enter a number:"));
+    // number2=Number(prompt("Enter a second number:"));
+
+    // if (number1 > number2) {
+    //     console.log(`${number1} is greater than ${number2}`);
+    // } else if (number1 === number2) {
+    //     console.log(`${number2} is equal to ${number1}`);
+    // } else {
+    //     console.log(`${number1} is less than ${number2}`);
+    // }
+
+    // let day= Number(prompt("Enter a number between 1 and 7:"));
+    // switch(day) {
+    //     case 1:
+    //         console.log("Monday");
+    //         break;
+    //     case 2:
+    //         console.log("Tuesday");
+    //         break;
+    //     case 3:
+    //         console.log("Wednesday");
+    //         break;
+    //     case 4:
+    //         console.log("Thursday");
+    //         break;
+    //     case 5:
+    //         console.log("Friday");
+    //         break;
+    //     case 6:
+    //         console.log("Saturday");
+    //         break;
+    //     case 7:
+    //         console.log("Sunday");
+    //         break;
+    //     default:
+    //         console.log("Invalid input. Please enter a number between 1 and 7.");
+    // }
+
+    let myArray =[4,5,6,10,12];
+    let total = 0;
+    for (let i = 0; i < myArray.length; i++) {
+        total += myArray[i];
+    }
+    console.log(total);
+
+    let number = 0;
+
+    while (number < 8) {
+        number = Math.floor(Math.random() * 10) + 1;
+        console.log(number);
+        total += number;
+    }
+
+    console.log("The sum of number < 8 is: " + total);
+
+    function printName(myName){
+        console.log("My name is " + myName);
+    }
+
+    printName("John Doe");
+
+    let greet = () => "good morning";
+    let message = greet();
+    console.log(message);
+
+    let addition = (num1,num2) => num1 + num2;
+    let calResult = addition(5,6);
+    console.log(calResult);
+
+    let num = 12;
+    let checkEven = (num % 2 === 0)?
+    () => console.log("even")
+    : () => console.log("odd");
+
+    checkEven();
+</script>
